@@ -1,6 +1,7 @@
 package automationTestByTestNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -12,17 +13,16 @@ import java.time.Duration;
 
 
 public class RegisterTest {
-    ChromeDriver driver;
+    WebDriver driver = new ChromeDriver();
     @BeforeTest
     public void openWebsite () {
-        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com/login");
     }
     @Test(priority = 0)
     public void navigateToSignUpPage() {
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Mahmoud Saber");
-        driver.findElement(By.xpath("//input[@data-qa='signup-email']")).sendKeys("yemep87634@naobk.com");
+        driver.findElement(By.xpath("//input[@data-qa='signup-email']")).sendKeys("nocori5462@naobk.com");
         driver.findElement(By.xpath("//button[@data-qa='signup-button']")).click();
     }
     @Test(priority = 1)
@@ -45,7 +45,10 @@ public class RegisterTest {
         yearsDropdown.selectByValue("1993");
 
         // scroll and check boxes selection
-        driver.findElement(By.id("newsletter")).click();
+        WebElement checkboxElement = driver.findElement(By.id("newsletter"));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", checkboxElement);
+        checkboxElement.click();
         driver.findElement(By.id("optin")).click();
     }
     @Test(priority = 2)
