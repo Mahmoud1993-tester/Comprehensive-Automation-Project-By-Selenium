@@ -22,7 +22,7 @@ public class LoginTest {
     }
     @Test(priority = 1)
     public void enterLoginValues() {
-        driver.findElement(By.xpath("//input[@data-qa='login-email']")).sendKeys("nocori5462@naobk.com");
+        driver.findElement(By.xpath("//input[@data-qa='login-email']")).sendKeys("namosos608@mobilesm.com");
         driver.findElement(By.xpath("//input[@data-qa='login-password']")).sendKeys("Pass@1993");
     }
     @Test(priority = 2)
