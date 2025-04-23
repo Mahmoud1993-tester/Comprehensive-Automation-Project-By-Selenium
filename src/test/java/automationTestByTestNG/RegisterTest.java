@@ -1,13 +1,8 @@
 package automationTestByTestNG;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pom_for_signup_page.AccountCreatedPage;
@@ -25,14 +20,14 @@ public class RegisterTest {
         driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com/login");
     }
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void navigateToSignUpPage() {
         LoginAndRegisterPage registerPage = new LoginAndRegisterPage(driver);
         registerPage.setSignUpName("Mahmoud Saber");
-        registerPage.setEmailAddress("jepev25977@f5url.com");
+        registerPage.setEmailAddress("hifer81939@cxnlab.com");
         registerPage.setSignUpButton();
     }
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void enterAccountInformation() {
         SignUpPage signUpPage = new SignUpPage(driver);
         signUpPage.titleSelect();
@@ -42,7 +37,7 @@ public class RegisterTest {
         signUpPage.setYearSelection("1993");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void selectCheckboxes() {
         SignUpPage signUpPage = new SignUpPage(driver);
         signUpPage.setCheckBoxOne();
@@ -50,7 +45,7 @@ public class RegisterTest {
     }
 
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void enterAddressInformation() {
         SignUpPage signUpPage = new SignUpPage(driver);
         signUpPage.setFirstName("Mahmoud");
@@ -65,18 +60,18 @@ public class RegisterTest {
         signUpPage.setMobileNumber("0111669210");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void clickCreateAccountButton() {
         SignUpPage signUpPage = new SignUpPage(driver);
         signUpPage.setCreateAccountButton();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void implicitWait() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
     }
 
-    @Test(priority = 6)
+    @Test(priority = 7)
     public void accountCreatedPage() {
         AccountCreatedPage accountCreatedPage = new AccountCreatedPage(driver);
         Assert.assertTrue(accountCreatedPage.isAccountCreatedMessage(), "ACCOUNT CREATED!");

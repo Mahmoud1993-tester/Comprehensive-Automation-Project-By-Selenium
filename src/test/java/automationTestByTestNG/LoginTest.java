@@ -1,10 +1,13 @@
 package automationTestByTestNG;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pom_for_login_page.AccountPage;
+import pom_for_login_page.HomePage;
+import pom_for_login_page.LoginAndRegisterPage;
 
 import java.time.Duration;
 
@@ -16,28 +19,39 @@ public class LoginTest {
         driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com/");
     }
-    @Test(priority = 0)
-    public void navigateToLoginPage() {
-        driver.findElement(By.xpath("//a[@href='/login']")).click();
-    }
     @Test(priority = 1)
-    public void enterLoginValues() {
-        driver.findElement(By.xpath("//input[@data-qa='login-email']")).sendKeys("namosos608@mobilesm.com");
-        driver.findElement(By.xpath("//input[@data-qa='login-password']")).sendKeys("Pass@1993");
+    public void navigateToLoginPage() {
+        HomePage homePage = new HomePage(driver);
+        homePage.setLoginLink();
     }
     @Test(priority = 2)
-    public void clickLoginButton() {
-        driver.findElement(By.xpath("//button[@data-qa='login-button']")).click();
+    public void enterLoginValues() {
+        LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
+        loginAndRegisterPage.setEmailAddressLogin("hifer81939@cxnlab.com");
+        loginAndRegisterPage.setPasswordLogin("Pass@445500");
     }
     @Test(priority = 3)
+    public void clickLoginButton() {
+        LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
+        loginAndRegisterPage.setLoginButton();
+    }
+    @Test(priority = 4)
     public void implicitWait() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
     }
-    @Test(priority = 4)
-    public void clickLogout() {
-        driver.findElement(By.xpath("//a[@href='/logout']")).click();
-    }
     @Test(priority = 5)
+    public void accountLoggedMessage() {
+        AccountPage accountPage = new AccountPage(driver);
+        Assert.assertTrue(accountPage.isUserLoggedIn(), "Logged in as");
+        Assert.assertTrue(accountPage.getLoggedInMessage().trim().contains("Logged in as"),
+                "Logged In Message Appeared");
+    }
+    @Test(priority = 6)
+    public void clickLogout() {
+        AccountPage accountPage = new AccountPage(driver);
+        accountPage.setLogoutLink();
+    }
+    @Test(priority = 6)
     public void closeBrowser() {
         driver.quit();
     }
