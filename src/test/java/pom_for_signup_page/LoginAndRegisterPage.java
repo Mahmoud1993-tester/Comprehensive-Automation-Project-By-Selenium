@@ -13,6 +13,7 @@ public class LoginAndRegisterPage {
     private final By signUpName = By.xpath("//*[@data-qa='signup-name']");
     private final By emailAddress = By.xpath("//*[@data-qa='signup-email']");
     private final By signUpButton = By.xpath("//button[@data-qa='signup-button']");
+    private final By registerMessage = By.xpath("//p[contains(text(), 'Email Address already')]");
 
     // ------ SignUp Actions ----------
     public void setSignUpName(String name) {
@@ -25,5 +26,13 @@ public class LoginAndRegisterPage {
 
     public void setSignUpButton() {
         driver.findElement(signUpButton).click();
+    }
+
+    public boolean isRegisterMessageDisplayed() {
+        return driver.findElement(registerMessage).isDisplayed();
+    }
+
+    public String getRegisterMessageText() {
+        return driver.findElement(registerMessage).getText();
     }
 }
