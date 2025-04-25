@@ -27,7 +27,7 @@ public class LoginTest {
     @Test(priority = 2)
     public void enterLoginValues() {
         LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
-        loginAndRegisterPage.setEmailAddressLogin("pitilam860@miracle3.com");
+        loginAndRegisterPage.setEmailAddressLogin("hedire2249@ingitel.com");
         loginAndRegisterPage.setPasswordLogin("Pass@445500");
     }
     @Test(priority = 3)

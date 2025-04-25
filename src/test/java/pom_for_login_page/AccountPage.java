@@ -24,9 +24,9 @@ public class AccountPage {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
             WebElement userLoggedElement = wait.until(ExpectedConditions.visibilityOfElementLocated(accountMessage));
-            return userLoggedElement != null && userLoggedElement.isDisplayed();
+            return userLoggedElement.isDisplayed();
         } catch (TimeoutException e) {
-            System.out.println("Element not visible within the timeout.");
+            System.out.println("Timeout waiting for element: " + accountMessage);
             return false; // Return false if the element is not found within the timeout
         }
     }

@@ -25,7 +25,7 @@ public class InvalidLoginTest {
     @Test(priority = 2)
     public void enterInvalidCredential() {
         LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
-        loginAndRegisterPage.setEmailAddressLogin("hifer81939@cxnlab.com");
+        loginAndRegisterPage.setEmailAddressLogin("hfr_s44@cxnlab.com");
         loginAndRegisterPage.setPasswordLogin("Pass@1993");
     }
     @Test(priority = 3)

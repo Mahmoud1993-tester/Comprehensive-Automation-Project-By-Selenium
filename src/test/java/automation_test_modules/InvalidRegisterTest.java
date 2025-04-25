@@ -26,7 +26,7 @@ public class InvalidRegisterTest {
     public void enterRegisterValues() {
         LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
         loginAndRegisterPage.setSignUpName("Ali Mahmoud");
-        loginAndRegisterPage.setEmailAddress("pitilam860@miracle3.com");
+        loginAndRegisterPage.setEmailAddress("user_2025@gmail.com");
     }
     @Test(priority = 3)
     public void clickRegisterButton() {
