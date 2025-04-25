@@ -10,10 +10,9 @@ import pom_for_login_page.AccountPage;
 import pom_for_login_page.HomePage;
 import pom_for_login_page.LoginAndRegisterPage;
 
-import java.time.Duration;
 
 public class LoginTest {
-    protected WebDriver driver;
+    WebDriver driver;
     @BeforeTest
     public void openWebsite() {
         driver = new ChromeDriver();
@@ -28,7 +27,7 @@ public class LoginTest {
     @Test(priority = 2)
     public void enterLoginValues() {
         LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
-        loginAndRegisterPage.setEmailAddressLogin("vonito2871@miracle3.com");
+        loginAndRegisterPage.setEmailAddressLogin("pitilam860@miracle3.com");
         loginAndRegisterPage.setPasswordLogin("Pass@445500");
     }
     @Test(priority = 3)
@@ -49,7 +48,7 @@ public class LoginTest {
         accountPage.setLogoutLink();
     }
     @AfterTest
-    public void closeBrowser() {
+    public void tearDown() {
         driver.quit();
     }
 

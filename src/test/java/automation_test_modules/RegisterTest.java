@@ -14,7 +14,7 @@ import java.time.Duration;
 
 
 public class RegisterTest {
-    protected WebDriver driver;
+    WebDriver driver;
     @BeforeTest
     public void openWebsite () {
         driver = new ChromeDriver();
@@ -25,7 +25,7 @@ public class RegisterTest {
     public void navigateToSignUpPage() {
         LoginAndRegisterPage registerPage = new LoginAndRegisterPage(driver);
         registerPage.setSignUpName("Mahmoud Saber");
-        registerPage.setEmailAddress("vonito2871@miracle3.com");
+        registerPage.setEmailAddress("pitilam860@miracle3.com");
         registerPage.setSignUpButton();
     }
     @Test(priority = 2)
@@ -89,7 +89,7 @@ public class RegisterTest {
 
     }
     @AfterTest
-    public void closeBrowser() {
+    public void tearDown() {
         driver.quit();
     }
 

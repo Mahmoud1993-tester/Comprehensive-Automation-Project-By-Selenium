@@ -10,7 +10,7 @@ import pom_for_login_page.HomePage;
 import pom_for_signup_page.LoginAndRegisterPage;
 
 public class InvalidRegisterTest {
-    protected WebDriver driver;
+    WebDriver driver;
     @BeforeTest
     public void openWebsite() {
         driver = new ChromeDriver();
@@ -26,7 +26,7 @@ public class InvalidRegisterTest {
     public void enterRegisterValues() {
         LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
         loginAndRegisterPage.setSignUpName("Ali Mahmoud");
-        loginAndRegisterPage.setEmailAddress("hifer81939@cxnlab.com");
+        loginAndRegisterPage.setEmailAddress("pitilam860@miracle3.com");
     }
     @Test(priority = 3)
     public void clickRegisterButton() {
@@ -41,7 +41,7 @@ public class InvalidRegisterTest {
                 "This Email already Exist is Displayed");
     }
     @AfterTest
-    public void closeBrowser() {
+    public void tearDown() {
         driver.quit();
     }
 

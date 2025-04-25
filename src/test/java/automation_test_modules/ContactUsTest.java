@@ -1,19 +1,23 @@
 package automation_test_modules;
 
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pom_for_contact_us_page.ContactUsPage;
 import pom_for_contact_us_page.HomePage;
 
+
 public class ContactUsTest {
-    protected WebDriver driver = new ChromeDriver();
+    WebDriver driver;
     @BeforeTest
-    public void openWebsite() {
+    public void homePage() {
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com/");
     }
@@ -59,7 +63,7 @@ public class ContactUsTest {
         contactUsPage.setHomeButton();
     }
     @AfterTest
-    public void closeBrowser() {
+    public void tearDown() {
         driver.quit();
     }
 

@@ -10,7 +10,7 @@ import pom_for_login_page.HomePage;
 import pom_for_login_page.LoginAndRegisterPage;
 
 public class InvalidLoginTest {
-    protected WebDriver driver;
+    WebDriver driver;
     @BeforeTest
     public void homePage() {
         driver = new ChromeDriver();
@@ -41,7 +41,7 @@ public class InvalidLoginTest {
                 "Message is displayed correctly!");
     }
     @AfterTest
-    public void closeBrowser() {
+    public void tearDown() {
         driver.quit();
     }
 }
