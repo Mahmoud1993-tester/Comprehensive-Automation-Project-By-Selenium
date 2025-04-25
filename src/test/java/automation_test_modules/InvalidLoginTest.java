@@ -3,13 +3,14 @@ package automation_test_modules;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pom_for_login_page.HomePage;
 import pom_for_login_page.LoginAndRegisterPage;
 
 public class InvalidLoginTest {
-    WebDriver driver;
+    protected WebDriver driver;
     @BeforeTest
     public void homePage() {
         driver = new ChromeDriver();
@@ -39,8 +40,8 @@ public class InvalidLoginTest {
         Assert.assertTrue(loginAndRegisterPage.getInvalidMessage().trim().contains("Your email or password is incorrect"),
                 "Message is displayed correctly!");
     }
-    @Test(priority = 5)
+    @AfterTest
     public void closeBrowser() {
-       driver.quit();
+        driver.quit();
     }
 }

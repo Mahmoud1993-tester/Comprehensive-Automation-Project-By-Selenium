@@ -3,13 +3,14 @@ package automation_test_modules;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pom_for_login_page.HomePage;
 import pom_for_signup_page.LoginAndRegisterPage;
 
 public class InvalidRegisterTest {
-    WebDriver driver;
+    protected WebDriver driver;
     @BeforeTest
     public void openWebsite() {
         driver = new ChromeDriver();
@@ -39,9 +40,9 @@ public class InvalidRegisterTest {
         Assert.assertTrue(loginAndRegisterPage.getRegisterMessageText().trim().contains("Email Address already exist!"),
                 "This Email already Exist is Displayed");
     }
-    @Test(priority = 5)
+    @AfterTest
     public void closeBrowser() {
-       driver.quit();
+        driver.quit();
     }
 
 }

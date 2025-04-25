@@ -3,6 +3,7 @@ package automation_test_modules;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pom_for_login_page.AccountPage;
@@ -12,7 +13,7 @@ import pom_for_login_page.LoginAndRegisterPage;
 import java.time.Duration;
 
 public class LoginTest {
-    WebDriver driver;
+    protected WebDriver driver;
     @BeforeTest
     public void openWebsite() {
         driver = new ChromeDriver();
@@ -27,17 +28,13 @@ public class LoginTest {
     @Test(priority = 2)
     public void enterLoginValues() {
         LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
-        loginAndRegisterPage.setEmailAddressLogin("hifer81939@cxnlab.com");
+        loginAndRegisterPage.setEmailAddressLogin("vonito2871@miracle3.com");
         loginAndRegisterPage.setPasswordLogin("Pass@445500");
     }
     @Test(priority = 3)
     public void clickLoginButton() {
         LoginAndRegisterPage loginAndRegisterPage = new LoginAndRegisterPage(driver);
         loginAndRegisterPage.setLoginButton();
-    }
-    @Test(priority = 4)
-    public void implicitWait() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
     }
     @Test(priority = 5)
     public void accountLoggedMessage() {
@@ -51,7 +48,7 @@ public class LoginTest {
         AccountPage accountPage = new AccountPage(driver);
         accountPage.setLogoutLink();
     }
-    @Test(priority = 6)
+    @AfterTest
     public void closeBrowser() {
         driver.quit();
     }

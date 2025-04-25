@@ -4,16 +4,16 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pom_for_contact_us_page.ContactUsPage;
 import pom_for_contact_us_page.HomePage;
 
 public class ContactUsTest {
-    WebDriver driver;
+    protected WebDriver driver = new ChromeDriver();
     @BeforeTest
     public void openWebsite() {
-        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com/");
     }
@@ -58,4 +58,9 @@ public class ContactUsTest {
         ContactUsPage contactUsPage = new ContactUsPage(driver);
         contactUsPage.setHomeButton();
     }
+    @AfterTest
+    public void closeBrowser() {
+        driver.quit();
+    }
+
 }

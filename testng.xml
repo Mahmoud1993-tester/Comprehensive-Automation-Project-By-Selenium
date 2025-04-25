@@ -1,0 +1,11 @@
+<suite name="MySuite">
+    <test name="Test1">
+        <classes>
+            <class name="automation_test_modules.RegisterTest"/>
+            <class name="automation_test_modules.LoginTest"/>
+            <class name="automation_test_modules.InvalidRegisterTest"/>
+            <class name="automation_test_modules.InvalidLoginTest"/>
+            <class name="automation_test_modules.ContactUsTest"/>
+        </classes>
+    </test>
+</suite>

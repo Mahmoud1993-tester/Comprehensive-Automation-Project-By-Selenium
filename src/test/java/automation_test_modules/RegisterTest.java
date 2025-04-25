@@ -14,9 +14,10 @@ import java.time.Duration;
 
 
 public class RegisterTest {
-    WebDriver driver = new ChromeDriver();
+    protected WebDriver driver;
     @BeforeTest
     public void openWebsite () {
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com/login");
     }
@@ -24,7 +25,7 @@ public class RegisterTest {
     public void navigateToSignUpPage() {
         LoginAndRegisterPage registerPage = new LoginAndRegisterPage(driver);
         registerPage.setSignUpName("Mahmoud Saber");
-        registerPage.setEmailAddress("hifer81939@cxnlab.com");
+        registerPage.setEmailAddress("vonito2871@miracle3.com");
         registerPage.setSignUpButton();
     }
     @Test(priority = 2)
@@ -86,12 +87,10 @@ public class RegisterTest {
         AccountPage accountPage = new AccountPage(driver);
         accountPage.setLogoutButton();
 
-
-
     }
-
     @AfterTest
     public void closeBrowser() {
         driver.quit();
     }
+
 }
