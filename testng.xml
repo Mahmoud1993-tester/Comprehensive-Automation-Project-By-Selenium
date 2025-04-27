@@ -1,28 +1,11 @@
-<suite name="MySuite" parallel="tests" thread-count="5">
-    <test name="RegisterTests">
+<suite name="Parallel_Testing" parallel="classes" thread-count="4">
+    <test name="AllTests">
         <classes>
             <class name="automation_test_modules.RegisterTest" />
-        </classes>
-    </test>
-    <test name="LoginTests">
-        <classes>
             <class name="automation_test_modules.LoginTest" />
-        </classes>
-    </test>
-    <test name="InvalidRegisterTests">
-        <classes>
             <class name="automation_test_modules.InvalidRegisterTest" />
-        </classes>
-    </test>
-    <test name="InvalidLoginTests">
-        <classes>
             <class name="automation_test_modules.InvalidLoginTest" />
-        </classes>
-    </test>
-    <test name="ContactUsTests">
-        <classes>
             <class name="automation_test_modules.ContactUsTest" />
         </classes>
     </test>
 </suite>
-

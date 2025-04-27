@@ -24,8 +24,8 @@ public class RegisterTest {
     @Test(priority = 1)
     public void navigateToSignUpPage() {
         LoginAndRegisterPage registerPage = new LoginAndRegisterPage(driver);
-        registerPage.setSignUpName("Saber");
-        registerPage.setEmailAddress("hedire2249@ingitel.com");
+        registerPage.setSignUpName("Mahmoud Saber");
+        registerPage.setEmailAddress("kimoyo1203@ingitel.com");
         registerPage.setSignUpButton();
     }
     @Test(priority = 2)

@@ -1,7 +1,6 @@
 package pom_for_login_page;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,14 +20,9 @@ public class AccountPage {
 
     // --- Actions ----
     public boolean isUserLoggedIn() {
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-            WebElement userLoggedElement = wait.until(ExpectedConditions.visibilityOfElementLocated(accountMessage));
-            return userLoggedElement.isDisplayed();
-        } catch (TimeoutException e) {
-            System.out.println("Timeout waiting for element: " + accountMessage);
-            return false; // Return false if the element is not found within the timeout
-        }
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement loggedInMessageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(accountMessage));
+        return loggedInMessageElement.isDisplayed();
     }
 
     public String getLoggedInMessage() {

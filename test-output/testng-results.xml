@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-27T03:20:37 EEST" name="Parallel_Testing" finished-at="2025-04-27T03:26:11 EEST" duration-ms="333471">
+    <groups>
+    </groups>
+    <test started-at="2025-04-27T03:20:37 EEST" name="AllTests" finished-at="2025-04-27T03:26:11 EEST" duration-ms="333471">
+      <class name="automation_test_modules.InvalidLoginTest">
+        <test-method is-config="true" signature="homePage()[pri:0, instance:automation_test_modules.InvalidLoginTest@53fb3dab]" started-at="2025-04-27T03:20:47 EEST" name="homePage" finished-at="2025-04-27T03:20:55 EEST" duration-ms="8065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method signature="navigateToLoginPage()[pri:1, instance:automation_test_modules.InvalidLoginTest@53fb3dab]" started-at="2025-04-27T03:22:20 EEST" name="navigateToLoginPage" finished-at="2025-04-27T03:22:29 EEST" duration-ms="8834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="enterInvalidCredential()[pri:2, instance:automation_test_modules.InvalidLoginTest@53fb3dab]" started-at="2025-04-27T03:22:44 EEST" name="enterInvalidCredential" finished-at="2025-04-27T03:22:44 EEST" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidCredential -->
+        <test-method signature="clickLoginButton()[pri:3, instance:automation_test_modules.InvalidLoginTest@53fb3dab]" started-at="2025-04-27T03:22:44 EEST" name="clickLoginButton" finished-at="2025-04-27T03:22:54 EEST" duration-ms="9996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoginButton -->
+        <test-method signature="checkMessage()[pri:4, instance:automation_test_modules.InvalidLoginTest@53fb3dab]" started-at="2025-04-27T03:22:55 EEST" name="checkMessage" finished-at="2025-04-27T03:22:57 EEST" duration-ms="2278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation_test_modules.InvalidLoginTest@53fb3dab]" started-at="2025-04-27T03:24:53 EEST" name="tearDown" finished-at="2025-04-27T03:25:24 EEST" duration-ms="31541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation_test_modules.InvalidLoginTest -->
+      <class name="automation_test_modules.InvalidRegisterTest">
+        <test-method is-config="true" signature="openWebsite()[pri:0, instance:automation_test_modules.InvalidRegisterTest@4b013c76]" started-at="2025-04-27T03:20:55 EEST" name="openWebsite" finished-at="2025-04-27T03:21:12 EEST" duration-ms="17009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebsite -->
+        <test-method signature="navigateToLoginPage()[pri:1, instance:automation_test_modules.InvalidRegisterTest@4b013c76]" started-at="2025-04-27T03:22:20 EEST" name="navigateToLoginPage" finished-at="2025-04-27T03:22:28 EEST" duration-ms="8064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="enterRegisterValues()[pri:2, instance:automation_test_modules.InvalidRegisterTest@4b013c76]" started-at="2025-04-27T03:22:44 EEST" name="enterRegisterValues" finished-at="2025-04-27T03:22:44 EEST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterValues -->
+        <test-method signature="clickRegisterButton()[pri:3, instance:automation_test_modules.InvalidRegisterTest@4b013c76]" started-at="2025-04-27T03:22:44 EEST" name="clickRegisterButton" finished-at="2025-04-27T03:22:44 EEST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickRegisterButton -->
+        <test-method signature="checkRegisterMessage()[pri:4, instance:automation_test_modules.InvalidRegisterTest@4b013c76]" started-at="2025-04-27T03:22:46 EEST" name="checkRegisterMessage" finished-at="2025-04-27T03:22:57 EEST" duration-ms="11765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRegisterMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation_test_modules.InvalidRegisterTest@4b013c76]" started-at="2025-04-27T03:25:24 EEST" name="tearDown" finished-at="2025-04-27T03:25:40 EEST" duration-ms="15904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation_test_modules.InvalidRegisterTest -->
+      <class name="automation_test_modules.RegisterTest">
+        <test-method is-config="true" signature="openWebsite()[pri:0, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:21:45 EEST" name="openWebsite" finished-at="2025-04-27T03:22:19 EEST" duration-ms="34008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebsite -->
+        <test-method signature="navigateToSignUpPage()[pri:1, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:22:20 EEST" name="navigateToSignUpPage" finished-at="2025-04-27T03:22:28 EEST" duration-ms="7697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSignUpPage -->
+        <test-method signature="enterAccountInformation()[pri:2, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:22:44 EEST" name="enterAccountInformation" finished-at="2025-04-27T03:22:50 EEST" duration-ms="6191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAccountInformation -->
+        <test-method signature="selectCheckboxes()[pri:3, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:22:50 EEST" name="selectCheckboxes" finished-at="2025-04-27T03:22:50 EEST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCheckboxes -->
+        <test-method signature="enterAddressInformation()[pri:4, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:22:51 EEST" name="enterAddressInformation" finished-at="2025-04-27T03:22:52 EEST" duration-ms="1680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAddressInformation -->
+        <test-method signature="clickCreateAccountButton()[pri:5, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:22:52 EEST" name="clickCreateAccountButton" finished-at="2025-04-27T03:23:03 EEST" duration-ms="10571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCreateAccountButton -->
+        <test-method signature="implicitWait()[pri:6, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:23:03 EEST" name="implicitWait" finished-at="2025-04-27T03:23:03 EEST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicitWait -->
+        <test-method signature="accountCreatedPage()[pri:7, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:23:04 EEST" name="accountCreatedPage" finished-at="2025-04-27T03:23:48 EEST" duration-ms="44680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountCreatedPage -->
+        <test-method signature="backToAccountPage()[pri:7, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:23:49 EEST" name="backToAccountPage" finished-at="2025-04-27T03:24:17 EEST" duration-ms="27446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backToAccountPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation_test_modules.RegisterTest@795509d9]" started-at="2025-04-27T03:25:58 EEST" name="tearDown" finished-at="2025-04-27T03:26:11 EEST" duration-ms="12690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation_test_modules.RegisterTest -->
+      <class name="automation_test_modules.LoginTest">
+        <test-method is-config="true" signature="openWebsite()[pri:0, instance:automation_test_modules.LoginTest@548d708a]" started-at="2025-04-27T03:21:12 EEST" name="openWebsite" finished-at="2025-04-27T03:21:45 EEST" duration-ms="33395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebsite -->
+        <test-method signature="navigateToLoginPage()[pri:1, instance:automation_test_modules.LoginTest@548d708a]" started-at="2025-04-27T03:22:20 EEST" name="navigateToLoginPage" finished-at="2025-04-27T03:22:28 EEST" duration-ms="7720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="enterLoginValues()[pri:2, instance:automation_test_modules.LoginTest@548d708a]" started-at="2025-04-27T03:22:44 EEST" name="enterLoginValues" finished-at="2025-04-27T03:22:44 EEST" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterLoginValues -->
+        <test-method signature="clickLoginButton()[pri:3, instance:automation_test_modules.LoginTest@548d708a]" started-at="2025-04-27T03:22:46 EEST" name="clickLoginButton" finished-at="2025-04-27T03:22:46 EEST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoginButton -->
+        <test-method signature="accountLoggedMessage()[pri:5, instance:automation_test_modules.LoginTest@548d708a]" started-at="2025-04-27T03:22:46 EEST" name="accountLoggedMessage" finished-at="2025-04-27T03:23:17 EEST" duration-ms="31091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountLoggedMessage -->
+        <test-method signature="clickLogout()[pri:6, instance:automation_test_modules.LoginTest@548d708a]" started-at="2025-04-27T03:23:17 EEST" name="clickLogout" finished-at="2025-04-27T03:23:22 EEST" duration-ms="5374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation_test_modules.LoginTest@548d708a]" started-at="2025-04-27T03:25:40 EEST" name="tearDown" finished-at="2025-04-27T03:25:58 EEST" duration-ms="17637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation_test_modules.LoginTest -->
+      <class name="automation_test_modules.ContactUsTest">
+        <test-method is-config="true" signature="homePage()[pri:0, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:20:37 EEST" name="homePage" finished-at="2025-04-27T03:20:47 EEST" duration-ms="9649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method signature="navigateTOContactSection()[pri:1, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:22:58 EEST" name="navigateTOContactSection" finished-at="2025-04-27T03:23:18 EEST" duration-ms="19639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateTOContactSection -->
+        <test-method signature="enterPersonalInfo()[pri:2, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:23:18 EEST" name="enterPersonalInfo" finished-at="2025-04-27T03:23:28 EEST" duration-ms="10116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPersonalInfo -->
+        <test-method signature="uploadFile()[pri:3, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:23:31 EEST" name="uploadFile" finished-at="2025-04-27T03:23:31 EEST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method signature="clickSubmitButton()[pri:4, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:23:34 EEST" name="clickSubmitButton" finished-at="2025-04-27T03:23:36 EEST" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSubmitButton -->
+        <test-method signature="acceptAlert()[pri:5, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:23:38 EEST" name="acceptAlert" finished-at="2025-04-27T03:23:39 EEST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptAlert -->
+        <test-method signature="successMessage()[pri:6, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:23:39 EEST" name="successMessage" finished-at="2025-04-27T03:23:39 EEST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successMessage -->
+        <test-method signature="backToHomePage()[pri:7, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:23:39 EEST" name="backToHomePage" finished-at="2025-04-27T03:24:20 EEST" duration-ms="41368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backToHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation_test_modules.ContactUsTest@cb0755b]" started-at="2025-04-27T03:24:20 EEST" name="tearDown" finished-at="2025-04-27T03:24:53 EEST" duration-ms="32573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation_test_modules.ContactUsTest -->
+    </test> <!-- AllTests -->
+  </suite> <!-- Parallel_Testing -->
+</testng-results>

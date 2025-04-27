@@ -2,6 +2,11 @@ package pom_for_signup_page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginAndRegisterPage {
     protected WebDriver driver;
@@ -13,7 +18,7 @@ public class LoginAndRegisterPage {
     private final By signUpName = By.xpath("//*[@data-qa='signup-name']");
     private final By emailAddress = By.xpath("//*[@data-qa='signup-email']");
     private final By signUpButton = By.xpath("//button[@data-qa='signup-button']");
-    private final By registerMessage = By.xpath("//p[contains(text(), 'Email Address already')]");
+    private final By registerMessage = By.xpath("//form//p[contains(text(), 'Email Address already')]");
 
     // ------ SignUp Actions ----------
     public void setSignUpName(String name) {
@@ -29,10 +34,14 @@ public class LoginAndRegisterPage {
     }
 
     public boolean isRegisterMessageDisplayed() {
-        return driver.findElement(registerMessage).isDisplayed();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement isMessageDisplayedElement = wait.until(ExpectedConditions.visibilityOfElementLocated(registerMessage));
+        return isMessageDisplayedElement.isDisplayed();
     }
 
     public String getRegisterMessageText() {
-        return driver.findElement(registerMessage).getText();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement getMessageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(registerMessage));
+        return getMessageElement.getText();
     }
 }
