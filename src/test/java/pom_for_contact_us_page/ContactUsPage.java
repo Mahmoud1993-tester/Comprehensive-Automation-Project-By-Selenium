@@ -4,6 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class ContactUsPage {
     protected WebDriver driver;
@@ -64,6 +68,8 @@ public class ContactUsPage {
 
     // ------- Navigate to HomePage ----
     public void setHomeButton() {
-        driver.findElement(homeButton).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement homeButtonElement = wait.until(ExpectedConditions.elementToBeClickable(homeButton));
+        homeButtonElement.click();
     }
 }

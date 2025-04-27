@@ -25,7 +25,7 @@ public class RegisterTest {
     public void navigateToSignUpPage() {
         LoginAndRegisterPage registerPage = new LoginAndRegisterPage(driver);
         registerPage.setSignUpName("Mahmoud Saber");
-        registerPage.setEmailAddress("kimoyo1203@ingitel.com");
+        registerPage.setEmailAddress("jobate9929@miracle3.com");
         registerPage.setSignUpButton();
     }
     @Test(priority = 2)
@@ -67,10 +67,6 @@ public class RegisterTest {
         signUpPage.setCreateAccountButton();
     }
 
-    @Test(priority = 6)
-    public void implicitWait() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
-    }
 
     @Test(priority = 7)
     public void accountCreatedPage() {

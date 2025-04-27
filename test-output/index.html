@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods,   28 passed</span>
+                    <span class="method-stats">27 methods,   27 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -194,11 +194,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Parallel_Testing" title="automation_test_modules.InvalidRegisterTest" class="method navigator-link" hash-for-method="enterRegisterValues">enterRegisterValues</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Parallel_Testing" title="automation_test_modules.RegisterTest" class="method navigator-link" hash-for-method="implicitWait">implicitWait</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -313,49 +308,6 @@
           <div class="suite-Parallel_Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">automation_test_modules.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="accountLoggedMessage">
-                  </a> <!-- accountLoggedMessage -->
-                  <span class="method-name">accountLoggedMessage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickLoginButton">
-                  </a> <!-- clickLoginButton -->
-                  <span class="method-name">clickLoginButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickLogout">
-                  </a> <!-- clickLogout -->
-                  <span class="method-name">clickLogout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterLoginValues">
-                  </a> <!-- enterLoginValues -->
-                  <span class="method-name">enterLoginValues</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateToLoginPage">
-                  </a> <!-- navigateToLoginPage -->
-                  <span class="method-name">navigateToLoginPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Parallel_Testing-class-passed -->
-          <div class="suite-Parallel_Testing-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">automation_test_modules.InvalidLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -428,6 +380,49 @@
           <div class="suite-Parallel_Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">automation_test_modules.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountLoggedMessage">
+                  </a> <!-- accountLoggedMessage -->
+                  <span class="method-name">accountLoggedMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickLoginButton">
+                  </a> <!-- clickLoginButton -->
+                  <span class="method-name">clickLoginButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickLogout">
+                  </a> <!-- clickLogout -->
+                  <span class="method-name">clickLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterLoginValues">
+                  </a> <!-- enterLoginValues -->
+                  <span class="method-name">enterLoginValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToLoginPage">
+                  </a> <!-- navigateToLoginPage -->
+                  <span class="method-name">navigateToLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Testing-class-passed -->
+          <div class="suite-Parallel_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">automation_test_modules.RegisterTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -468,13 +463,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="implicitWait">
-                  </a> <!-- implicitWait -->
-                  <span class="method-name">implicitWait</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="navigateToSignUpPage">
                   </a> <!-- navigateToSignUpPage -->
                   <span class="method-name">navigateToSignUpPage</span>
@@ -498,8 +486,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;Parallel_Testing&quot;&gt;
-  &lt;test thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;AllTests&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;Parallel_Testing&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;AllTests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;automation_test_modules.RegisterTest&quot;/&gt;
       &lt;class name=&quot;automation_test_modules.LoginTest&quot;/&gt;
@@ -545,124 +533,120 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(28);
+data.addRows(27);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'accountCreatedPage')
-data.setCell(0, 2, 'automation_test_modules.RegisterTest')
-data.setCell(0, 3, 44680);
+data.setCell(0, 1, 'navigateTOContactSection')
+data.setCell(0, 2, 'automation_test_modules.ContactUsTest')
+data.setCell(0, 3, 84941);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'backToHomePage')
-data.setCell(1, 2, 'automation_test_modules.ContactUsTest')
-data.setCell(1, 3, 41368);
+data.setCell(1, 1, 'clickLoginButton')
+data.setCell(1, 2, 'automation_test_modules.LoginTest')
+data.setCell(1, 3, 74177);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'accountLoggedMessage')
-data.setCell(2, 2, 'automation_test_modules.LoginTest')
-data.setCell(2, 3, 31091);
+data.setCell(2, 1, 'clickRegisterButton')
+data.setCell(2, 2, 'automation_test_modules.InvalidRegisterTest')
+data.setCell(2, 3, 57902);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'backToAccountPage')
+data.setCell(3, 1, 'enterAccountInformation')
 data.setCell(3, 2, 'automation_test_modules.RegisterTest')
-data.setCell(3, 3, 27446);
+data.setCell(3, 3, 52224);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'navigateTOContactSection')
-data.setCell(4, 2, 'automation_test_modules.ContactUsTest')
-data.setCell(4, 3, 19639);
+data.setCell(4, 1, 'backToAccountPage')
+data.setCell(4, 2, 'automation_test_modules.RegisterTest')
+data.setCell(4, 3, 43613);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkRegisterMessage')
-data.setCell(5, 2, 'automation_test_modules.InvalidRegisterTest')
-data.setCell(5, 3, 11765);
+data.setCell(5, 1, 'accountCreatedPage')
+data.setCell(5, 2, 'automation_test_modules.RegisterTest')
+data.setCell(5, 3, 42714);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'clickCreateAccountButton')
-data.setCell(6, 2, 'automation_test_modules.RegisterTest')
-data.setCell(6, 3, 10571);
+data.setCell(6, 1, 'backToHomePage')
+data.setCell(6, 2, 'automation_test_modules.ContactUsTest')
+data.setCell(6, 3, 34280);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'enterPersonalInfo')
 data.setCell(7, 2, 'automation_test_modules.ContactUsTest')
-data.setCell(7, 3, 10116);
+data.setCell(7, 3, 29465);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'clickLoginButton')
-data.setCell(8, 2, 'automation_test_modules.InvalidLoginTest')
-data.setCell(8, 3, 9996);
+data.setCell(8, 1, 'clickCreateAccountButton')
+data.setCell(8, 2, 'automation_test_modules.RegisterTest')
+data.setCell(8, 3, 26782);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'navigateToLoginPage')
+data.setCell(9, 1, 'checkMessage')
 data.setCell(9, 2, 'automation_test_modules.InvalidLoginTest')
-data.setCell(9, 3, 8834);
+data.setCell(9, 3, 17957);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'navigateToLoginPage')
+data.setCell(10, 1, 'checkRegisterMessage')
 data.setCell(10, 2, 'automation_test_modules.InvalidRegisterTest')
-data.setCell(10, 3, 8064);
+data.setCell(10, 3, 13484);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'navigateToLoginPage')
 data.setCell(11, 2, 'automation_test_modules.LoginTest')
-data.setCell(11, 3, 7720);
+data.setCell(11, 3, 5821);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'navigateToSignUpPage')
-data.setCell(12, 2, 'automation_test_modules.RegisterTest')
-data.setCell(12, 3, 7697);
+data.setCell(12, 1, 'navigateToLoginPage')
+data.setCell(12, 2, 'automation_test_modules.InvalidLoginTest')
+data.setCell(12, 3, 5766);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'enterAccountInformation')
-data.setCell(13, 2, 'automation_test_modules.RegisterTest')
-data.setCell(13, 3, 6191);
+data.setCell(13, 1, 'navigateToLoginPage')
+data.setCell(13, 2, 'automation_test_modules.InvalidRegisterTest')
+data.setCell(13, 3, 5645);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'clickLogout')
-data.setCell(14, 2, 'automation_test_modules.LoginTest')
-data.setCell(14, 3, 5374);
+data.setCell(14, 1, 'navigateToSignUpPage')
+data.setCell(14, 2, 'automation_test_modules.RegisterTest')
+data.setCell(14, 3, 5613);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'checkMessage')
-data.setCell(15, 2, 'automation_test_modules.InvalidLoginTest')
-data.setCell(15, 3, 2278);
+data.setCell(15, 1, 'clickLogout')
+data.setCell(15, 2, 'automation_test_modules.LoginTest')
+data.setCell(15, 3, 5259);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'clickSubmitButton')
-data.setCell(16, 2, 'automation_test_modules.ContactUsTest')
-data.setCell(16, 3, 1756);
+data.setCell(16, 1, 'enterInvalidCredential')
+data.setCell(16, 2, 'automation_test_modules.InvalidLoginTest')
+data.setCell(16, 3, 3283);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'enterAddressInformation')
-data.setCell(17, 2, 'automation_test_modules.RegisterTest')
-data.setCell(17, 3, 1680);
+data.setCell(17, 1, 'enterLoginValues')
+data.setCell(17, 2, 'automation_test_modules.LoginTest')
+data.setCell(17, 3, 3271);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'enterLoginValues')
-data.setCell(18, 2, 'automation_test_modules.LoginTest')
-data.setCell(18, 3, 761);
+data.setCell(18, 1, 'enterAddressInformation')
+data.setCell(18, 2, 'automation_test_modules.RegisterTest')
+data.setCell(18, 3, 2791);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'enterInvalidCredential')
-data.setCell(19, 2, 'automation_test_modules.InvalidLoginTest')
-data.setCell(19, 3, 761);
+data.setCell(19, 1, 'clickSubmitButton')
+data.setCell(19, 2, 'automation_test_modules.ContactUsTest')
+data.setCell(19, 3, 2765);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'enterRegisterValues')
-data.setCell(20, 2, 'automation_test_modules.InvalidRegisterTest')
-data.setCell(20, 3, 532);
+data.setCell(20, 1, 'accountLoggedMessage')
+data.setCell(20, 2, 'automation_test_modules.LoginTest')
+data.setCell(20, 3, 842);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'acceptAlert')
-data.setCell(21, 2, 'automation_test_modules.ContactUsTest')
+data.setCell(21, 1, 'enterRegisterValues')
+data.setCell(21, 2, 'automation_test_modules.InvalidRegisterTest')
 data.setCell(21, 3, 501);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'uploadFile')
+data.setCell(22, 1, 'acceptAlert')
 data.setCell(22, 2, 'automation_test_modules.ContactUsTest')
-data.setCell(22, 3, 465);
+data.setCell(22, 3, 480);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'selectCheckboxes')
-data.setCell(23, 2, 'automation_test_modules.RegisterTest')
-data.setCell(23, 3, 347);
+data.setCell(23, 1, 'clickLoginButton')
+data.setCell(23, 2, 'automation_test_modules.InvalidLoginTest')
+data.setCell(23, 3, 269);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'clickLoginButton')
-data.setCell(24, 2, 'automation_test_modules.LoginTest')
-data.setCell(24, 3, 281);
+data.setCell(24, 1, 'uploadFile')
+data.setCell(24, 2, 'automation_test_modules.ContactUsTest')
+data.setCell(24, 3, 250);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'clickRegisterButton')
-data.setCell(25, 2, 'automation_test_modules.InvalidRegisterTest')
-data.setCell(25, 3, 203);
+data.setCell(25, 1, 'successMessage')
+data.setCell(25, 2, 'automation_test_modules.ContactUsTest')
+data.setCell(25, 3, 89);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'implicitWait')
+data.setCell(26, 1, 'selectCheckboxes')
 data.setCell(26, 2, 'automation_test_modules.RegisterTest')
-data.setCell(26, 3, 168);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'successMessage')
-data.setCell(27, 2, 'automation_test_modules.ContactUsTest')
-data.setCell(27, 3, 68);
+data.setCell(26, 3, 79);
 window.suiteTableData['Parallel_Testing']= { tableData: data, tableDiv: 'times-div-Parallel_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Parallel_Testing">
               </div> <!-- times-div-Parallel_Testing -->
             </div> <!-- times-div -->
@@ -698,232 +682,234 @@ return data;
               <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">homePage</span>
-                <span class="method-start">9655 ms</span>
+                <span class="method-start">14828 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openWebsite</span>
-                <span class="method-start">17721 ms</span>
+                <span class="method-start">26534 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openWebsite</span>
-                <span class="method-start">34731 ms</span>
+                <span class="method-start">37860 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openWebsite</span>
-                <span class="method-start">68126 ms</span>
+                <span class="method-start">66950 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">navigateToLoginPage</span>
-                <span class="method-start">102864 ms</span>
+                <span class="method-start">84625 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">navigateToSignUpPage</span>
-                <span class="method-start">102864 ms</span>
+                <span class="method-start">84625 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">navigateToLoginPage</span>
-                <span class="method-start">102865 ms</span>
+                <span class="method-start">84625 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">navigateToLoginPage</span>
-                <span class="method-start">102865 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">enterAccountInformation</span>
-                <span class="method-start">126391 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">enterRegisterValues</span>
-                <span class="method-start">126391 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">enterInvalidCredential</span>
-                <span class="method-start">126392 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">enterLoginValues</span>
-                <span class="method-start">126399 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">clickRegisterButton</span>
-                <span class="method-start">126990 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">clickLoginButton</span>
-                <span class="method-start">127155 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkRegisterMessage</span>
-                <span class="method-start">128447 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">clickLoginButton</span>
-                <span class="method-start">128447 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">accountLoggedMessage</span>
-                <span class="method-start">128730 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">selectCheckboxes</span>
-                <span class="method-start">132585 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterAddressInformation</span>
-                <span class="method-start">133363 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickCreateAccountButton</span>
-                <span class="method-start">135046 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkMessage</span>
-                <span class="method-start">137820 ms</span>
+                <span class="method-start">84625 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.ContactUsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">navigateTOContactSection</span>
-                <span class="method-start">140829 ms</span>
+                <span class="method-start">84625 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">implicitWait</span>
-                <span class="method-start">145982 ms</span>
+                <span class="method-name">enterAccountInformation</span>
+                <span class="method-start">116585 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">accountCreatedPage</span>
-                <span class="method-start">146374 ms</span>
+                <span class="method-name">enterRegisterValues</span>
+                <span class="method-start">116585 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">enterInvalidCredential</span>
+                <span class="method-start">116587 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">clickLogout</span>
-                <span class="method-start">159823 ms</span>
+                <span class="method-name">enterLoginValues</span>
+                <span class="method-start">116603 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickRegisterButton</span>
+                <span class="method-start">117092 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickLoginButton</span>
+                <span class="method-start">120283 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickLoginButton</span>
+                <span class="method-start">120292 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkMessage</span>
+                <span class="method-start">120566 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">selectCheckboxes</span>
+                <span class="method-start">169301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterAddressInformation</span>
+                <span class="method-start">169531 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.ContactUsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">enterPersonalInfo</span>
-                <span class="method-start">161227 ms</span>
+                <span class="method-start">169568 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickCreateAccountButton</span>
+                <span class="method-start">172324 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkRegisterMessage</span>
+                <span class="method-start">175472 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">accountLoggedMessage</span>
+                <span class="method-start">194471 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">clickLogout</span>
+                <span class="method-start">195316 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">accountCreatedPage</span>
+                <span class="method-start">199288 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation_test_modules.ContactUsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <span class="method-name">uploadFile</span>
-                <span class="method-start">173550 ms</span>
+                <span class="method-start">199288 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickSubmitButton</span>
-                <span class="method-start">177111 ms</span>
+                <span class="method-start">199540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">acceptAlert</span>
-                <span class="method-start">181144 ms</span>
+                <span class="method-start">202677 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">successMessage</span>
-                <span class="method-start">181659 ms</span>
+                <span class="method-start">203160 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">backToHomePage</span>
-                <span class="method-start">181728 ms</span>
+                <span class="method-start">203252 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">backToAccountPage</span>
-                <span class="method-start">192031 ms</span>
+                <span class="method-start">242970 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.ContactUsTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">223103 ms</span>
+                <span class="method-start">286588 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.InvalidLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">255677 ms</span>
+                <span class="method-start">314969 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.InvalidRegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">287218 ms</span>
+                <span class="method-start">319799 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">303123 ms</span>
+                <span class="method-start">323939 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation_test_modules.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">320760 ms</span>
+                <span class="method-start">326086 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
